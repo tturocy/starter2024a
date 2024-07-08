@@ -2,9 +2,9 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
-        name='demo',
+        name="demo",
         app_sequence=[
-            'splash'
+            "splash"
         ],
         num_demo_participants=3,
     ),
@@ -26,16 +26,16 @@ SESSION_FIELDS = []
 
 # ISO-639 code
 # for example: de, fr, ja, ko, zh-hans
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = "en"
 
 # e.g. EUR, GBP, CNY, JPY
-REAL_WORLD_CURRENCY_CODE = 'GBP'
+REAL_WORLD_CURRENCY_CODE = "GBP"
 USE_POINTS = False
 
-ADMIN_USERNAME = 'admin'
+ADMIN_USERNAME = "admin"
 # for security, best to set admin password in an environment variable
-ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD')
+ADMIN_PASSWORD = environ.get("OTREE_ADMIN_PASSWORD")
 
 DEMO_PAGE_INTRO_HTML = """ """
 
-SECRET_KEY = '8668690891855'
+SECRET_KEY = "8668690891855"

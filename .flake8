@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 99
+indent-width = 4
+exclude =
+  .git
+  __pycache__
+  contrib
+  build
+  dist

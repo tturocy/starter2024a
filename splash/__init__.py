@@ -1,5 +1,10 @@
-from otree.api import *
-
+from otree.api import (
+    BaseConstants,
+    BaseGroup,
+    BasePlayer,
+    BaseSubsession,
+    Page,
+)
 
 doc = """
 A splash-screen welcome page for the experiment
@@ -7,7 +12,7 @@ A splash-screen welcome page for the experiment
 
 
 class C(BaseConstants):
-    NAME_IN_URL = 'intro'
+    NAME_IN_URL = "intro"
     PLAYERS_PER_GROUP = None
     NUM_ROUNDS = 1
 
