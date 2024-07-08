@@ -1,2 +1,12 @@
-# starter2024a
-Starter template repository for programming economics experiments, Summer 2024 version
+# Template repository for oTree experiment project
+
+This is a template repository that sets up a project using oTree (https://otree.org).
+
+Aside from saving a few steps in setting up the repository itself (via GitHub's templating feature),
+this pre-populates your project with some useful infrastructural files:
+
+* Sets up a `requirements.txt` file including oTree (5.10.4) as well as numpy, scipy, and pandas,
+  which are often useful to have in programming an experiment.
+* Adds a `runtime.txt`, so the project is ready for deployment to Heroku.
+* Runs `otree startproject` and includes the basic files generated.
+* Some improvements to the `.gitignore` file.
