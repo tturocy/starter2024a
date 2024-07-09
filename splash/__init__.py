@@ -35,5 +35,5 @@ class Splash(Page):
 
 
 page_sequence = [
-    Splash
+    Splash,
 ]

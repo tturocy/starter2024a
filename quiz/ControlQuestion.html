@@ -1,0 +1,33 @@
+{{ block title }}
+Question {{ player.round_number }}
+{{ endblock }}
+
+{{ block content }}
+<script>
+    $(document).ready(function() {
+        $(":radio").click(function () {
+            $(".otree-btn-next").prop("disabled", false).removeClass("btn-secondary").addClass("btn-primary");
+        });
+    });
+</script>
+
+<p>
+    {{ question_text }}
+</p>
+
+{% for choice in question_choices %}
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id="{{ choice.name }}" name="question" value="{{ choice.value }}" required>
+        <label class="form-check-label" for="{{ choice.name }}">{{ choice.text }}</label>
+    </div>
+{% endfor %}
+
+
+<div class="row mt-3 mb-3">
+    <div class="col text-center">
+        <button class="otree-btn-next btn btn-secondary" disabled>Confirm answer</button>
+    </div>
+</div>
+
+
+{{ endblock }}

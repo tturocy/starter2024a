@@ -20,7 +20,13 @@ this pre-populates your project with some useful infrastructural files:
 
 * Defines an app, `splash`, which implements a simple splash screen suitable for opening
   an experiment in the lab.  This screen has a `Next` button only when in demo mode.
-
+* The app `quiz` illustrates one way to implement a multiple-choice comprehension quiz,
+  coding the questions and answers as data to avoid repetitive code.  Additional
+  features:
+  - Records the number of incorrect attempts
+  - Returns custom hint text
+  - Illustrates how, using JavaScript/jQuery, to disable a submission button until the
+    user has made acceptable input (in this case, selecting one of the options)
 
 ## Advanced programming tools
 
