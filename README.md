@@ -7,7 +7,7 @@ this pre-populates your project with some useful infrastructural files:
 
 ## Basic features
 
-* Sets up a `requirements.txt` file including oTree (5.10.4) as well as numpy, scipy, and pandas,
+* Sets up a `requirements.txt` file including oTree (5.11.1) as well as numpy, scipy, and pandas,
   which are often useful to have in programming an experiment.
   To replicate, do these steps:
   * `pip install otree numpy scipy pandas`
