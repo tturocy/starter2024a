@@ -27,6 +27,11 @@ this pre-populates your project with some useful infrastructural files:
   - Returns custom hint text
   - Illustrates how, using JavaScript/jQuery, to disable a submission button until the
     user has made acceptable input (in this case, selecting one of the options)
+* The wait page for `quiz` also uses a slightly customised wait page template.  The
+  base template for this is in `_templates/global/WaitPage.html`, and the `quiz` wait
+  page extends this.   This demonstrates some simple customisation of wait pages;
+  in particular it disables the "progress bar" slider which some people find uncomfortable
+  to look at.
 
 ## Advanced programming tools
 
