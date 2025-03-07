@@ -1,9 +1,12 @@
-{{ extends 'otree/WaitPage.html' }}
+{{ extends "otree/WaitPage.html" }}
+{{ load otree static }}
+
 {{ block title }}
     One moment please...
 {{ endblock }}
 
-{{ block content }}
+{{ block global_styles }}
+<link rel="stylesheet" href="{{ static 'global/theme.css' }}">
 <style>
     body {
         background-color: #eee;
@@ -12,8 +15,4 @@
         visibility: hidden;
     }
 </style>
-
-{{ block local_content }}
-{{ endblock }}
-
 {{ endblock }}

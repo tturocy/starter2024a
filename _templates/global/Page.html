@@ -1,8 +1,9 @@
-{% extends "otree/Page.html" %}
-{% load otree static %}
+{{ extends "otree/Page.html" }}
+{{ load otree static }}
 
-{% block global_styles  %}
-{% endblock %}
+{{ block global_styles }}
+<link rel="stylesheet" href="{{ static 'global/theme.css' }}">
+{{ endblock }}
 
-{% block global_scripts  %}
-{% endblock %}
+{{ block global_scripts }}
+{{ endblock }}

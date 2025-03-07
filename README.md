@@ -32,6 +32,12 @@ this pre-populates your project with some useful infrastructural files:
   page extends this.   This demonstrates some simple customisation of wait pages;
   in particular it disables the "progress bar" slider which some people find uncomfortable
   to look at.
+* We also have set up the framework for a simple customisable theme you can apply to all
+  of your pages.  The CSS file for this is `_static/global/theme.css`, where we have
+  as a demonstration set all the titles for pages to be in green text, and set the base font
+  to be Verdana.  To make use of this style, all you have to do is start your (regular) page
+  templates with the line `{{ extends 'global/Page.html' }}` - see `quiz/ControlQuestion.html` for an
+  example.
 
 ## Advanced programming tools
 
